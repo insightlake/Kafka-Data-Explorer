@@ -10,6 +10,14 @@ Users can explore the realtime data securely. All the data access is logged.
 
 To learn more, check out [http://insightlake.com/dataexplorer.html](http://insightlake.com/dataexplorer.html)
 
+<img style="width:100%;" src="images/login.png">
+
+<img style="width:100%;" src="images/explorer.png">
+
+<img style="width:100%;" src="images/schema.png">
+
+<img style="width:100%;" src="images/realtime-graph.png">
+
 Installation
 ------
 * Download or clone the repository. 
