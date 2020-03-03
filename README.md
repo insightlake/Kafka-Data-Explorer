@@ -12,7 +12,7 @@ To learn more, check out [http://insightlake.com/dataexplorer.html](http://insig
 
 <img style="width:100%;" src="images/login.png">
 
-<img style="width:100%;" src="images/explorer.png">
+<img style="width:100%;" src="images/explore.png">
 
 <img style="width:100%;" src="images/schema.png">
 
