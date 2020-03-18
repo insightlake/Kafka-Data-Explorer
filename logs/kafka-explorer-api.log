@@ -1,0 +1,819 @@
+2020-03-18 15:30:53.687  INFO 7033 --- [main] c.i.edp.kafka.sasl.EdpKafkaApp           : Starting EdpKafkaApp v1.0 on root with PID 7033 (/home/sai/EDP-DATA-MODULES/GITREPOSITROYDEPLOYMENT/Kafka-Data-Explorer/libs/thin/root/edp-kafka-sasl-1.0.jar started by root in /home/sai/EDP-DATA-MODULES/GITREPOSITROYDEPLOYMENT/Kafka-Data-Explorer/logs)
+2020-03-18 15:30:53.709  INFO 7033 --- [main] c.i.edp.kafka.sasl.EdpKafkaApp           : No active profile set, falling back to default profiles: default
+2020-03-18 15:30:54.648  INFO 7033 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@749d7c01: startup date [Wed Mar 18 15:30:54 IST 2020]; root of context hierarchy
+2020-03-18 15:30:56.907  INFO 7033 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'ipCountryZipService' with a different definition: replacing [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2020-03-18 15:30:57.824  INFO 7033 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-18 15:30:57.899  INFO 7033 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$7c5ff973] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-18 15:30:58.144  INFO 7033 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a8ade7f0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-18 15:30:58.808  INFO 7033 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9494 (http)
+2020-03-18 15:30:58.864  INFO 7033 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-18 15:30:58.865  INFO 7033 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2020-03-18 15:30:58.878  INFO 7033 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2020-03-18 15:30:59.039  INFO 7033 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/insightlake]   : Initializing Spring embedded WebApplicationContext
+2020-03-18 15:30:59.039  INFO 7033 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4392 ms
+2020-03-18 15:30:59.381  INFO 7033 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-18 15:30:59.382  INFO 7033 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-18 15:30:59.382  INFO 7033 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-18 15:30:59.382  INFO 7033 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-18 15:30:59.383  INFO 7033 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-03-18 15:30:59.383  INFO 7033 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'someFilterRegistration' to: [/*]
+2020-03-18 15:30:59.383  INFO 7033 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-03-18 15:30:59.385  INFO 7033 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2-console/*]
+2020-03-18 15:30:59.769  INFO 7033 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-18 15:31:00.217  INFO 7033 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-18 15:31:00.324  INFO 7033 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-03-18 15:31:00.359  INFO 7033 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-03-18 15:31:00.500  INFO 7033 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
+2020-03-18 15:31:00.504  INFO 7033 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-03-18 15:31:00.576  INFO 7033 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-03-18 15:31:00.773  INFO 7033 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-03-18 15:31:01.380  WARN 7033 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.insightlake.edp.db.dashboard.entity.LogicalField$PrimaryKey
+2020-03-18 15:31:01.380  WARN 7033 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.insightlake.edp.db.dashboard.entity.LogicalField$PrimaryKey
+2020-03-18 15:31:03.291  INFO 7033 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@3ec8c874'
+2020-03-18 15:31:03.299  INFO 7033 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-18 15:31:03.629  INFO 7033 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'clientInboundChannelExecutor'
+2020-03-18 15:31:03.657  INFO 7033 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'clientOutboundChannelExecutor'
+2020-03-18 15:31:03.687  WARN 7033 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static org.springframework.messaging.simp.SimpMessagingTemplate com.insightlake.edp.kafka.sasl.helper.SendResult.broker
+2020-03-18 15:31:03.894  INFO 7033 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [jar:file:/home/sai/EDP-DATA-MODULES/GITREPOSITROYDEPLOYMENT/Kafka-Data-Explorer/libs/thin/root/edp-kafka-sasl-1.0.jar!/data.sql]
+2020-03-18 15:31:03.905  INFO 7033 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [jar:file:/home/sai/EDP-DATA-MODULES/GITREPOSITROYDEPLOYMENT/Kafka-Data-Explorer/libs/thin/root/edp-kafka-sasl-1.0.jar!/data.sql] in 11 ms.
+2020-03-18 15:31:06.263  INFO 7033 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'messageBrokerTaskScheduler'
+2020-03-18 15:31:06.344  INFO 7033 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped URL path [/query] onto handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2020-03-18 15:31:06.345  INFO 7033 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped URL path [/receiver] onto handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2020-03-18 15:31:06.345  INFO 7033 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped URL path [/report] onto handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2020-03-18 15:31:06.381  INFO 7033 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'brokerChannelExecutor'
+2020-03-18 15:31:06.509  INFO 7033 --- [main] .WebSocketAnnotationMethodMessageHandler : Mapped "{[/receiver],messageType=[MESSAGE]}" onto public void com.insightlake.edp.kafka.sasl.controller.ReceiverController.sendMessage(com.insightlake.edp.kafka.sasl.helper.UserEntity) throws java.io.IOException
+2020-03-18 15:31:06.811  INFO 7033 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: b0d481f1-fde8-49b4-ac02-054127b3d92c
+
+2020-03-18 15:31:06.899  INFO 7033 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/'], []
+2020-03-18 15:31:06.899  INFO 7033 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/index.html'], []
+2020-03-18 15:31:06.899  INFO 7033 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/api/user/register'], []
+2020-03-18 15:31:06.899  INFO 7033 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/api/user/login'], []
+2020-03-18 15:31:06.899  INFO 7033 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/api/user/forgot'], []
+2020-03-18 15:31:06.900  INFO 7033 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/api/user/reset'], []
+2020-03-18 15:31:06.900  INFO 7033 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2020-03-18 15:31:06.900  INFO 7033 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/edp/**'], []
+2020-03-18 15:31:06.900  INFO 7033 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/app/**'], []
+2020-03-18 15:31:06.900  INFO 7033 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/query/**'], []
+2020-03-18 15:31:06.900  INFO 7033 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/receiver/**'], []
+2020-03-18 15:31:06.900  INFO 7033 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/verify/**'], []
+2020-03-18 15:31:06.900  INFO 7033 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/report/**'], []
+2020-03-18 15:31:06.900  INFO 7033 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/*.*.*'], []
+2020-03-18 15:31:06.901  INFO 7033 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/h2-console/**'], []
+2020-03-18 15:31:06.901  INFO 7033 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/assets/**'], []
+2020-03-18 15:31:06.901  INFO 7033 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/*.js'], []
+2020-03-18 15:31:06.901  INFO 7033 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/*.woff'], []
+2020-03-18 15:31:06.901  INFO 7033 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/*.woff2'], []
+2020-03-18 15:31:06.901  INFO 7033 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/*.ttf'], []
+2020-03-18 15:31:06.901  INFO 7033 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/file/**'], []
+2020-03-18 15:31:06.901  INFO 7033 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2020-03-18 15:31:06.902  INFO 7033 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2020-03-18 15:31:06.902  INFO 7033 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2020-03-18 15:31:06.902  INFO 7033 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-03-18 15:31:07.076  INFO 7033 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4f5c55a8, org.springframework.security.web.context.SecurityContextPersistenceFilter@70903e7b, org.springframework.security.web.header.HeaderWriterFilter@5decbb5f, org.springframework.security.web.authentication.logout.LogoutFilter@2927d781, com.insightlake.edp.api.user.security.JWTFilter@2d198533, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7ad31e9e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@41aa99fc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@bcecdd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6bd4d24b, org.springframework.security.web.session.SessionManagementFilter@4ea01c2a, org.springframework.security.web.access.ExceptionTranslationFilter@1ed43328, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@39badc71]
+2020-03-18 15:31:08.205  INFO 7033 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-18 15:31:08.469  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@749d7c01: startup date [Wed Mar 18 15:30:54 IST 2020]; root of context hierarchy
+2020-03-18 15:31:08.541  WARN 7033 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-18 15:31:08.614  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/partition/offset],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<com.insightlake.edp.kafka.sasl.utils.PartationOffset>> com.insightlake.edp.kafka.sasl.controller.ReceiverController.getOffsets(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+2020-03-18 15:31:08.615  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stop],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<java.lang.String>> com.insightlake.edp.kafka.sasl.controller.ReceiverController.stopkafkaConsumer() throws java.lang.Exception
+2020-03-18 15:31:08.616  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stopconsumer],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<java.lang.String>> com.insightlake.edp.kafka.sasl.controller.ReceiverController.stopconsumer() throws java.lang.Exception
+2020-03-18 15:31:08.617  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getMessage],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<java.lang.String>> com.insightlake.edp.kafka.sasl.controller.ReceiverController.getTopics(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+2020-03-18 15:31:08.617  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/partition/message],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<java.lang.String>> com.insightlake.edp.kafka.sasl.controller.ReceiverController.getMessageFromParation(java.lang.String,java.lang.String,long,java.lang.String,java.lang.String) throws java.lang.Exception
+2020-03-18 15:31:08.619  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sender/{topic}/{message}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<java.lang.Object>> com.insightlake.edp.kafka.sasl.controller.SenderController.updateActions(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2020-03-18 15:31:08.620  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/getschema/{schemaName}/{version}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<java.lang.Object>> com.insightlake.edp.kafka.sasl.controller.SchemaController.getLatestSchemaVersion(java.lang.String,java.lang.String)
+2020-03-18 15:31:08.624  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ssal/user],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<com.insightlake.edp.kafka.sasl.helper.SaslUser>> com.insightlake.edp.kafka.sasl.controller.LoginController.updateEntity(com.insightlake.edp.kafka.sasl.helper.SaslUser) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.625  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ssal/user],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<com.insightlake.edp.kafka.sasl.helper.SaslUser>> com.insightlake.edp.kafka.sasl.controller.LoginController.saveSaslUser(com.insightlake.edp.kafka.sasl.helper.SaslUser)
+2020-03-18 15:31:08.626  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ssal/user/getAlluser],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<java.util.List<com.insightlake.edp.kafka.sasl.helper.SaslUser>>> com.insightlake.edp.kafka.sasl.controller.LoginController.getSaslUserByUser(long) throws java.lang.Exception
+2020-03-18 15:31:08.627  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ssal/user/getuser],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<com.insightlake.edp.kafka.sasl.helper.SaslUser>> com.insightlake.edp.kafka.sasl.controller.LoginController.getUser(com.insightlake.edp.kafka.sasl.helper.SaslUser) throws java.lang.Exception
+2020-03-18 15:31:08.627  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ssal/user],methods=[DELETE],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<java.lang.String>> com.insightlake.edp.kafka.sasl.controller.LoginController.deleteEntity(com.insightlake.edp.kafka.sasl.helper.SaslUser) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.629  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/kafka/topics],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<java.util.List<com.insightlake.edp.kafka.sasl.utils.Topic>>> com.insightlake.edp.kafka.sasl.controller.ConsumerController.getTopics(java.lang.String,java.lang.String) throws java.lang.Exception
+2020-03-18 15:31:08.633  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/user]}" onto public com.insightlake.edp.db.model.user.User com.insightlake.edp.api.user.controller.UserController.user(java.security.Principal)
+2020-03-18 15:31:08.635  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/register],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.User>> com.insightlake.edp.api.user.controller.UserController.createUser(com.insightlake.edp.db.model.user.User)
+2020-03-18 15:31:08.635  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/login],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.Map<java.lang.String, java.lang.Object>>> com.insightlake.edp.api.user.controller.UserController.login(com.insightlake.edp.db.model.user.User) throws java.io.IOException
+2020-03-18 15:31:08.636  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/get],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.User>> com.insightlake.edp.api.user.controller.UserController.userByUserName(java.lang.String)
+2020-03-18 15:31:08.637  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/getAll],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.List<com.insightlake.edp.db.model.user.User>>> com.insightlake.edp.api.user.controller.UserController.getAllUsers()
+2020-03-18 15:31:08.637  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/forgot],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.User>> com.insightlake.edp.api.user.controller.UserController.forgetPassword(com.insightlake.edp.db.model.user.User)
+2020-03-18 15:31:08.638  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/reset],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.User>> com.insightlake.edp.api.user.controller.UserController.resetPassword(com.insightlake.edp.db.model.user.User)
+2020-03-18 15:31:08.638  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/delete],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.lang.String>> com.insightlake.edp.api.user.controller.UserController.deleteUser(long)
+2020-03-18 15:31:08.639  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/update],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.User>> com.insightlake.edp.api.user.controller.UserController.updateUser(com.insightlake.edp.db.model.user.User)
+2020-03-18 15:31:08.641  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/app],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.App>> com.insightlake.edp.api.user.controller.AppController.updateEntity(com.insightlake.edp.db.model.user.App) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.642  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/app/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.App>> com.insightlake.edp.api.user.controller.AppController.getEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.642  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/app],methods=[DELETE],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.lang.String>> com.insightlake.edp.api.user.controller.AppController.deleteEntity(com.insightlake.edp.db.model.user.App) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.643  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/app],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.List<com.insightlake.edp.db.model.user.App>>> com.insightlake.edp.api.user.controller.AppController.getAllEntities() throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.643  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/app],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.App>> com.insightlake.edp.api.user.controller.AppController.createEntity(com.insightlake.edp.db.model.user.App) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.645  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/org],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.Organization>> com.insightlake.edp.api.user.controller.OrganizationController.updateEntity(com.insightlake.edp.db.model.user.Organization) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.646  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/org/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.Organization>> com.insightlake.edp.api.user.controller.OrganizationController.getEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.646  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/org],methods=[DELETE],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.lang.String>> com.insightlake.edp.api.user.controller.OrganizationController.deleteEntity(com.insightlake.edp.db.model.user.Organization) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.647  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/org],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.List<com.insightlake.edp.db.model.user.Organization>>> com.insightlake.edp.api.user.controller.OrganizationController.getAllEntities() throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.647  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/org],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.Organization>> com.insightlake.edp.api.user.controller.OrganizationController.createEntity(com.insightlake.edp.db.model.user.Organization) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.649  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/groupmembers],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserGroupMember>> com.insightlake.edp.api.user.controller.UserGroupMembersController.updateEntity(com.insightlake.edp.db.model.user.UserGroupMember) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.650  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/groupmembers/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserGroupMember>> com.insightlake.edp.api.user.controller.UserGroupMembersController.getEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.650  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/groupmembers/{id}],methods=[DELETE],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.lang.String>> com.insightlake.edp.api.user.controller.UserGroupMembersController.deleteEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.653  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/groupmembers/getAll/{groupId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.List<com.insightlake.edp.db.model.user.User>>> com.insightlake.edp.api.user.controller.UserGroupMembersController.getAllUsers(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.654  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/groupmembers],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.List<com.insightlake.edp.db.model.user.UserGroupMember>>> com.insightlake.edp.api.user.controller.UserGroupMembersController.getAllEntities() throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.654  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/groupmembers],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserGroupMember>> com.insightlake.edp.api.user.controller.UserGroupMembersController.createEntity(com.insightlake.edp.db.model.user.UserGroupMember) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.656  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/lob],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.Lob>> com.insightlake.edp.api.user.controller.LobController.updateEntity(com.insightlake.edp.db.model.user.Lob) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.657  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/lob/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.Lob>> com.insightlake.edp.api.user.controller.LobController.getEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.658  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/lob],methods=[DELETE],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.lang.String>> com.insightlake.edp.api.user.controller.LobController.deleteEntity(com.insightlake.edp.db.model.user.Lob) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.658  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/lob],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.List<com.insightlake.edp.db.model.user.Lob>>> com.insightlake.edp.api.user.controller.LobController.getAllEntities() throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.659  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/lob],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.Lob>> com.insightlake.edp.api.user.controller.LobController.createEntity(com.insightlake.edp.db.model.user.Lob) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.661  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/menus],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserMenus>> com.insightlake.edp.api.user.controller.UserMenusController.updateEntity(com.insightlake.edp.db.model.user.UserMenus) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.661  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/menus/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserMenus>> com.insightlake.edp.api.user.controller.UserMenusController.getEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.662  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/menus/{id}],methods=[DELETE],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.lang.String>> com.insightlake.edp.api.user.controller.UserMenusController.deleteEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.662  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/menus],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.List<com.insightlake.edp.db.model.user.UserMenus>>> com.insightlake.edp.api.user.controller.UserMenusController.getAllEntities() throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.662  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/menus],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserMenus>> com.insightlake.edp.api.user.controller.UserMenusController.createEntity(com.insightlake.edp.db.model.user.UserMenus) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.664  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/roles],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserRole>> com.insightlake.edp.api.user.controller.RolesController.updateEntity(com.insightlake.edp.db.model.user.UserRole) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.665  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/roles/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserRole>> com.insightlake.edp.api.user.controller.RolesController.getEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.665  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/roles/{id}],methods=[DELETE],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.lang.String>> com.insightlake.edp.api.user.controller.RolesController.deleteEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.666  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/roles],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.List<com.insightlake.edp.db.model.user.UserRole>>> com.insightlake.edp.api.user.controller.RolesController.getAllEntities() throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.666  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/roles],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserRole>> com.insightlake.edp.api.user.controller.RolesController.createEntity(com.insightlake.edp.db.model.user.UserRole) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.668  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/group],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserGroup>> com.insightlake.edp.api.user.controller.UserGroupController.updateEntity(com.insightlake.edp.db.model.user.UserGroup) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.669  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/group/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserGroup>> com.insightlake.edp.api.user.controller.UserGroupController.getEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.669  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/group/{id}],methods=[DELETE],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.lang.String>> com.insightlake.edp.api.user.controller.UserGroupController.deleteEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.670  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/group],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.List<com.insightlake.edp.db.model.user.UserGroup>>> com.insightlake.edp.api.user.controller.UserGroupController.getAllEntities() throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.670  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/group],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserGroup>> com.insightlake.edp.api.user.controller.UserGroupController.createEntity(com.insightlake.edp.db.model.user.UserGroup) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:31:08.677  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-18 15:31:08.678  INFO 7033 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-18 15:31:08.761  INFO 7033 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-18 15:31:08.761  INFO 7033 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-18 15:31:08.917  INFO 7033 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-03-18 15:31:10.137  INFO 7033 --- [main] o.s.l.c.support.AbstractContextSource    : Property 'userDn' not set - anonymous context will be used for read-write operations
+2020-03-18 15:31:10.458  INFO 7033 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-03-18 15:31:10.461  INFO 7033 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-03-18 15:31:10.471  INFO 7033 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-03-18 15:31:10.484  INFO 7033 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483547
+2020-03-18 15:31:10.484  INFO 7033 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-03-18 15:31:10.485  INFO 7033 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2020-03-18 15:31:10.486  INFO 7033 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2020-03-18 15:31:10.487  INFO 7033 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2020-03-18 15:31:10.535  INFO 7033 --- [main] org.mortbay.log                          : Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog
+2020-03-18 15:31:10.577  INFO 7033 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9494 (http) with context path '/insightlake'
+2020-03-18 15:31:10.581  INFO 7033 --- [main] c.i.edp.kafka.sasl.EdpKafkaApp           : Started EdpKafkaApp in 17.813 seconds (JVM running for 32.087)
+2020-03-18 15:32:06.373  INFO 7033 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2020-03-18 15:34:11.368  INFO 8148 --- [main] c.i.edp.kafka.sasl.EdpKafkaApp           : Starting EdpKafkaApp v1.0 on root with PID 8148 (/home/sai/EDP-DATA-MODULES/GITREPOSITROYDEPLOYMENT/Kafka-Data-Explorer/libs/thin/root/edp-kafka-sasl-1.0.jar started by root in /home/sai/EDP-DATA-MODULES/GITREPOSITROYDEPLOYMENT/Kafka-Data-Explorer/logs)
+2020-03-18 15:34:11.376  INFO 8148 --- [main] c.i.edp.kafka.sasl.EdpKafkaApp           : No active profile set, falling back to default profiles: default
+2020-03-18 15:34:12.255  INFO 8148 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@419f0ea: startup date [Wed Mar 18 15:34:12 IST 2020]; root of context hierarchy
+2020-03-18 15:34:14.502  INFO 8148 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'ipCountryZipService' with a different definition: replacing [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2020-03-18 15:34:15.388  INFO 8148 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-18 15:34:15.451  INFO 8148 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$1edc4b9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-18 15:34:15.698  INFO 8148 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2e3bb336] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-18 15:34:16.252  INFO 8148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9494 (http)
+2020-03-18 15:34:16.320  INFO 8148 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-18 15:34:16.320  INFO 8148 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2020-03-18 15:34:16.333  INFO 8148 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2020-03-18 15:34:16.465  INFO 8148 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/insightlake]   : Initializing Spring embedded WebApplicationContext
+2020-03-18 15:34:16.466  INFO 8148 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4211 ms
+2020-03-18 15:34:16.828  INFO 8148 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-18 15:34:16.829  INFO 8148 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-18 15:34:16.829  INFO 8148 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-18 15:34:16.829  INFO 8148 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-18 15:34:16.830  INFO 8148 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-03-18 15:34:16.830  INFO 8148 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'someFilterRegistration' to: [/*]
+2020-03-18 15:34:16.831  INFO 8148 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-03-18 15:34:16.833  INFO 8148 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2-console/*]
+2020-03-18 15:34:17.175  INFO 8148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-18 15:34:17.837  INFO 8148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-18 15:34:17.924  INFO 8148 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-03-18 15:34:17.950  INFO 8148 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-03-18 15:34:18.057  INFO 8148 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
+2020-03-18 15:34:18.061  INFO 8148 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-03-18 15:34:18.147  INFO 8148 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-03-18 15:34:18.295  INFO 8148 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-03-18 15:34:18.956  WARN 8148 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.insightlake.edp.db.dashboard.entity.LogicalField$PrimaryKey
+2020-03-18 15:34:18.956  WARN 8148 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.insightlake.edp.db.dashboard.entity.LogicalField$PrimaryKey
+2020-03-18 15:34:20.879  INFO 8148 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@31e08c61'
+2020-03-18 15:34:20.887  INFO 8148 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-18 15:34:21.288  INFO 8148 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'clientInboundChannelExecutor'
+2020-03-18 15:34:21.317  INFO 8148 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'clientOutboundChannelExecutor'
+2020-03-18 15:34:21.347  WARN 8148 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static org.springframework.messaging.simp.SimpMessagingTemplate com.insightlake.edp.kafka.sasl.helper.SendResult.broker
+2020-03-18 15:34:21.542  INFO 8148 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [jar:file:/home/sai/EDP-DATA-MODULES/GITREPOSITROYDEPLOYMENT/Kafka-Data-Explorer/libs/thin/root/edp-kafka-sasl-1.0.jar!/data.sql]
+2020-03-18 15:34:21.550  INFO 8148 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [jar:file:/home/sai/EDP-DATA-MODULES/GITREPOSITROYDEPLOYMENT/Kafka-Data-Explorer/libs/thin/root/edp-kafka-sasl-1.0.jar!/data.sql] in 8 ms.
+2020-03-18 15:34:23.886  INFO 8148 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'messageBrokerTaskScheduler'
+2020-03-18 15:34:23.962  INFO 8148 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped URL path [/query] onto handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2020-03-18 15:34:23.962  INFO 8148 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped URL path [/receiver] onto handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2020-03-18 15:34:23.962  INFO 8148 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped URL path [/report] onto handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2020-03-18 15:34:23.988  INFO 8148 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'brokerChannelExecutor'
+2020-03-18 15:34:24.126  INFO 8148 --- [main] .WebSocketAnnotationMethodMessageHandler : Mapped "{[/receiver],messageType=[MESSAGE]}" onto public void com.insightlake.edp.kafka.sasl.controller.ReceiverController.sendMessage(com.insightlake.edp.kafka.sasl.helper.UserEntity) throws java.io.IOException
+2020-03-18 15:34:24.533  INFO 8148 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6d74136e-c53f-4e6f-8e0f-23b142cfa12c
+
+2020-03-18 15:34:24.669  INFO 8148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/'], []
+2020-03-18 15:34:24.669  INFO 8148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/index.html'], []
+2020-03-18 15:34:24.669  INFO 8148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/api/user/register'], []
+2020-03-18 15:34:24.669  INFO 8148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/api/user/login'], []
+2020-03-18 15:34:24.669  INFO 8148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/api/user/forgot'], []
+2020-03-18 15:34:24.669  INFO 8148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/api/user/reset'], []
+2020-03-18 15:34:24.669  INFO 8148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2020-03-18 15:34:24.670  INFO 8148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/edp/**'], []
+2020-03-18 15:34:24.670  INFO 8148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/app/**'], []
+2020-03-18 15:34:24.670  INFO 8148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/query/**'], []
+2020-03-18 15:34:24.671  INFO 8148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/receiver/**'], []
+2020-03-18 15:34:24.673  INFO 8148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/verify/**'], []
+2020-03-18 15:34:24.673  INFO 8148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/report/**'], []
+2020-03-18 15:34:24.674  INFO 8148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/*.*.*'], []
+2020-03-18 15:34:24.674  INFO 8148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/h2-console/**'], []
+2020-03-18 15:34:24.675  INFO 8148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/assets/**'], []
+2020-03-18 15:34:24.675  INFO 8148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/*.js'], []
+2020-03-18 15:34:24.675  INFO 8148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/*.woff'], []
+2020-03-18 15:34:24.675  INFO 8148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/*.woff2'], []
+2020-03-18 15:34:24.677  INFO 8148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/*.ttf'], []
+2020-03-18 15:34:24.677  INFO 8148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/file/**'], []
+2020-03-18 15:34:24.677  INFO 8148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2020-03-18 15:34:24.677  INFO 8148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2020-03-18 15:34:24.677  INFO 8148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2020-03-18 15:34:24.677  INFO 8148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-03-18 15:34:25.150  INFO 8148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7054b8a1, org.springframework.security.web.context.SecurityContextPersistenceFilter@53ed864c, org.springframework.security.web.header.HeaderWriterFilter@633332e2, org.springframework.security.web.authentication.logout.LogoutFilter@20c642ef, com.insightlake.edp.api.user.security.JWTFilter@3d5f6088, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@71878833, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@38ce90b4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1155ab2c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48f38142, org.springframework.security.web.session.SessionManagementFilter@64e3d4ab, org.springframework.security.web.access.ExceptionTranslationFilter@20b1f874, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a4fa5df]
+2020-03-18 15:34:26.382  INFO 8148 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-18 15:34:26.628  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@419f0ea: startup date [Wed Mar 18 15:34:12 IST 2020]; root of context hierarchy
+2020-03-18 15:34:26.784  WARN 8148 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-18 15:34:26.833  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/partition/offset],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<com.insightlake.edp.kafka.sasl.utils.PartationOffset>> com.insightlake.edp.kafka.sasl.controller.ReceiverController.getOffsets(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+2020-03-18 15:34:26.834  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stop],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<java.lang.String>> com.insightlake.edp.kafka.sasl.controller.ReceiverController.stopkafkaConsumer() throws java.lang.Exception
+2020-03-18 15:34:26.834  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stopconsumer],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<java.lang.String>> com.insightlake.edp.kafka.sasl.controller.ReceiverController.stopconsumer() throws java.lang.Exception
+2020-03-18 15:34:26.835  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getMessage],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<java.lang.String>> com.insightlake.edp.kafka.sasl.controller.ReceiverController.getTopics(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+2020-03-18 15:34:26.835  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/partition/message],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<java.lang.String>> com.insightlake.edp.kafka.sasl.controller.ReceiverController.getMessageFromParation(java.lang.String,java.lang.String,long,java.lang.String,java.lang.String) throws java.lang.Exception
+2020-03-18 15:34:26.836  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sender/{topic}/{message}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<java.lang.Object>> com.insightlake.edp.kafka.sasl.controller.SenderController.updateActions(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2020-03-18 15:34:26.837  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/getschema/{schemaName}/{version}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<java.lang.Object>> com.insightlake.edp.kafka.sasl.controller.SchemaController.getLatestSchemaVersion(java.lang.String,java.lang.String)
+2020-03-18 15:34:26.841  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ssal/user],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<com.insightlake.edp.kafka.sasl.helper.SaslUser>> com.insightlake.edp.kafka.sasl.controller.LoginController.updateEntity(com.insightlake.edp.kafka.sasl.helper.SaslUser) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.842  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ssal/user/getAlluser],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<java.util.List<com.insightlake.edp.kafka.sasl.helper.SaslUser>>> com.insightlake.edp.kafka.sasl.controller.LoginController.getSaslUserByUser(long) throws java.lang.Exception
+2020-03-18 15:34:26.842  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ssal/user/getuser],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<com.insightlake.edp.kafka.sasl.helper.SaslUser>> com.insightlake.edp.kafka.sasl.controller.LoginController.getUser(com.insightlake.edp.kafka.sasl.helper.SaslUser) throws java.lang.Exception
+2020-03-18 15:34:26.843  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ssal/user],methods=[DELETE],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<java.lang.String>> com.insightlake.edp.kafka.sasl.controller.LoginController.deleteEntity(com.insightlake.edp.kafka.sasl.helper.SaslUser) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.843  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ssal/user],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<com.insightlake.edp.kafka.sasl.helper.SaslUser>> com.insightlake.edp.kafka.sasl.controller.LoginController.saveSaslUser(com.insightlake.edp.kafka.sasl.helper.SaslUser)
+2020-03-18 15:34:26.844  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/kafka/topics],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<java.util.List<com.insightlake.edp.kafka.sasl.utils.Topic>>> com.insightlake.edp.kafka.sasl.controller.ConsumerController.getTopics(java.lang.String,java.lang.String) throws java.lang.Exception
+2020-03-18 15:34:26.848  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/user]}" onto public com.insightlake.edp.db.model.user.User com.insightlake.edp.api.user.controller.UserController.user(java.security.Principal)
+2020-03-18 15:34:26.849  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/register],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.User>> com.insightlake.edp.api.user.controller.UserController.createUser(com.insightlake.edp.db.model.user.User)
+2020-03-18 15:34:26.849  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/login],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.Map<java.lang.String, java.lang.Object>>> com.insightlake.edp.api.user.controller.UserController.login(com.insightlake.edp.db.model.user.User) throws java.io.IOException
+2020-03-18 15:34:26.850  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/get],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.User>> com.insightlake.edp.api.user.controller.UserController.userByUserName(java.lang.String)
+2020-03-18 15:34:26.850  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/getAll],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.List<com.insightlake.edp.db.model.user.User>>> com.insightlake.edp.api.user.controller.UserController.getAllUsers()
+2020-03-18 15:34:26.850  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/forgot],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.User>> com.insightlake.edp.api.user.controller.UserController.forgetPassword(com.insightlake.edp.db.model.user.User)
+2020-03-18 15:34:26.851  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/reset],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.User>> com.insightlake.edp.api.user.controller.UserController.resetPassword(com.insightlake.edp.db.model.user.User)
+2020-03-18 15:34:26.851  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/delete],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.lang.String>> com.insightlake.edp.api.user.controller.UserController.deleteUser(long)
+2020-03-18 15:34:26.852  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/update],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.User>> com.insightlake.edp.api.user.controller.UserController.updateUser(com.insightlake.edp.db.model.user.User)
+2020-03-18 15:34:26.854  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/app],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.App>> com.insightlake.edp.api.user.controller.AppController.updateEntity(com.insightlake.edp.db.model.user.App) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.854  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/app/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.App>> com.insightlake.edp.api.user.controller.AppController.getEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.855  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/app],methods=[DELETE],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.lang.String>> com.insightlake.edp.api.user.controller.AppController.deleteEntity(com.insightlake.edp.db.model.user.App) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.855  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/app],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.List<com.insightlake.edp.db.model.user.App>>> com.insightlake.edp.api.user.controller.AppController.getAllEntities() throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.856  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/app],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.App>> com.insightlake.edp.api.user.controller.AppController.createEntity(com.insightlake.edp.db.model.user.App) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.857  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/org],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.Organization>> com.insightlake.edp.api.user.controller.OrganizationController.updateEntity(com.insightlake.edp.db.model.user.Organization) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.857  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/org/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.Organization>> com.insightlake.edp.api.user.controller.OrganizationController.getEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.858  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/org],methods=[DELETE],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.lang.String>> com.insightlake.edp.api.user.controller.OrganizationController.deleteEntity(com.insightlake.edp.db.model.user.Organization) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.858  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/org],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.List<com.insightlake.edp.db.model.user.Organization>>> com.insightlake.edp.api.user.controller.OrganizationController.getAllEntities() throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.858  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/org],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.Organization>> com.insightlake.edp.api.user.controller.OrganizationController.createEntity(com.insightlake.edp.db.model.user.Organization) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.860  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/groupmembers],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserGroupMember>> com.insightlake.edp.api.user.controller.UserGroupMembersController.updateEntity(com.insightlake.edp.db.model.user.UserGroupMember) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.861  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/groupmembers/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserGroupMember>> com.insightlake.edp.api.user.controller.UserGroupMembersController.getEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.861  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/groupmembers/{id}],methods=[DELETE],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.lang.String>> com.insightlake.edp.api.user.controller.UserGroupMembersController.deleteEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.862  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/groupmembers/getAll/{groupId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.List<com.insightlake.edp.db.model.user.User>>> com.insightlake.edp.api.user.controller.UserGroupMembersController.getAllUsers(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.862  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/groupmembers],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.List<com.insightlake.edp.db.model.user.UserGroupMember>>> com.insightlake.edp.api.user.controller.UserGroupMembersController.getAllEntities() throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.862  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/groupmembers],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserGroupMember>> com.insightlake.edp.api.user.controller.UserGroupMembersController.createEntity(com.insightlake.edp.db.model.user.UserGroupMember) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.863  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/lob],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.Lob>> com.insightlake.edp.api.user.controller.LobController.updateEntity(com.insightlake.edp.db.model.user.Lob) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.864  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/lob/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.Lob>> com.insightlake.edp.api.user.controller.LobController.getEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.864  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/lob],methods=[DELETE],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.lang.String>> com.insightlake.edp.api.user.controller.LobController.deleteEntity(com.insightlake.edp.db.model.user.Lob) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.864  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/lob],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.List<com.insightlake.edp.db.model.user.Lob>>> com.insightlake.edp.api.user.controller.LobController.getAllEntities() throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.865  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/lob],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.Lob>> com.insightlake.edp.api.user.controller.LobController.createEntity(com.insightlake.edp.db.model.user.Lob) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.866  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/menus],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserMenus>> com.insightlake.edp.api.user.controller.UserMenusController.updateEntity(com.insightlake.edp.db.model.user.UserMenus) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.866  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/menus/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserMenus>> com.insightlake.edp.api.user.controller.UserMenusController.getEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.867  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/menus/{id}],methods=[DELETE],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.lang.String>> com.insightlake.edp.api.user.controller.UserMenusController.deleteEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.867  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/menus],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.List<com.insightlake.edp.db.model.user.UserMenus>>> com.insightlake.edp.api.user.controller.UserMenusController.getAllEntities() throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.868  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/menus],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserMenus>> com.insightlake.edp.api.user.controller.UserMenusController.createEntity(com.insightlake.edp.db.model.user.UserMenus) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.869  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/roles],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserRole>> com.insightlake.edp.api.user.controller.RolesController.updateEntity(com.insightlake.edp.db.model.user.UserRole) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.869  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/roles/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserRole>> com.insightlake.edp.api.user.controller.RolesController.getEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.870  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/roles/{id}],methods=[DELETE],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.lang.String>> com.insightlake.edp.api.user.controller.RolesController.deleteEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.870  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/roles],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.List<com.insightlake.edp.db.model.user.UserRole>>> com.insightlake.edp.api.user.controller.RolesController.getAllEntities() throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.870  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/roles],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserRole>> com.insightlake.edp.api.user.controller.RolesController.createEntity(com.insightlake.edp.db.model.user.UserRole) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.872  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/group],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserGroup>> com.insightlake.edp.api.user.controller.UserGroupController.updateEntity(com.insightlake.edp.db.model.user.UserGroup) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.873  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/group/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserGroup>> com.insightlake.edp.api.user.controller.UserGroupController.getEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.873  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/group/{id}],methods=[DELETE],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.lang.String>> com.insightlake.edp.api.user.controller.UserGroupController.deleteEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.873  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/group],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.List<com.insightlake.edp.db.model.user.UserGroup>>> com.insightlake.edp.api.user.controller.UserGroupController.getAllEntities() throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.874  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/group],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserGroup>> com.insightlake.edp.api.user.controller.UserGroupController.createEntity(com.insightlake.edp.db.model.user.UserGroup) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:34:26.878  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-18 15:34:26.879  INFO 8148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-18 15:34:26.928  INFO 8148 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-18 15:34:26.928  INFO 8148 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-18 15:34:27.032  INFO 8148 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-03-18 15:34:27.989  INFO 8148 --- [main] o.s.l.c.support.AbstractContextSource    : Property 'userDn' not set - anonymous context will be used for read-write operations
+2020-03-18 15:34:28.243  INFO 8148 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-03-18 15:34:28.246  INFO 8148 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-03-18 15:34:28.254  INFO 8148 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-03-18 15:34:28.264  INFO 8148 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483547
+2020-03-18 15:34:28.264  INFO 8148 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-03-18 15:34:28.264  INFO 8148 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2020-03-18 15:34:28.265  INFO 8148 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2020-03-18 15:34:28.265  INFO 8148 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2020-03-18 15:34:28.299  INFO 8148 --- [main] org.mortbay.log                          : Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog
+2020-03-18 15:34:28.329  INFO 8148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9494 (http) with context path '/insightlake'
+2020-03-18 15:34:28.332  INFO 8148 --- [main] c.i.edp.kafka.sasl.EdpKafkaApp           : Started EdpKafkaApp in 17.843 seconds (JVM running for 33.88)
+2020-03-18 15:35:23.985  INFO 8148 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2020-03-18 15:43:00.418  INFO 10764 --- [main] c.i.edp.kafka.sasl.EdpKafkaApp           : Starting EdpKafkaApp v1.0 on root with PID 10764 (/home/sai/EDP-DATA-MODULES/GITREPOSITROYDEPLOYMENT/Kafka-Data-Explorer/libs/thin/root/edp-kafka-sasl-1.0.jar started by root in /home/sai/EDP-DATA-MODULES/GITREPOSITROYDEPLOYMENT/Kafka-Data-Explorer/logs)
+2020-03-18 15:43:00.448  INFO 10764 --- [main] c.i.edp.kafka.sasl.EdpKafkaApp           : No active profile set, falling back to default profiles: default
+2020-03-18 15:43:02.606  INFO 10764 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1ddf42dd: startup date [Wed Mar 18 15:43:02 IST 2020]; root of context hierarchy
+2020-03-18 15:43:06.384  INFO 10764 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'ipCountryZipService' with a different definition: replacing [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2020-03-18 15:43:07.534  INFO 10764 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-18 15:43:07.593  INFO 10764 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$18ab3f8c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-18 15:43:07.820  INFO 10764 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$44f92e09] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-18 15:43:08.830  INFO 10764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9494 (http)
+2020-03-18 15:43:08.888  INFO 10764 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-18 15:43:08.888  INFO 10764 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2020-03-18 15:43:08.903  INFO 10764 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2020-03-18 15:43:09.094  INFO 10764 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/insightlake]   : Initializing Spring embedded WebApplicationContext
+2020-03-18 15:43:09.095  INFO 10764 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6494 ms
+2020-03-18 15:43:09.497  INFO 10764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-18 15:43:09.498  INFO 10764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-18 15:43:09.498  INFO 10764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-18 15:43:09.498  INFO 10764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-18 15:43:09.499  INFO 10764 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-03-18 15:43:09.499  INFO 10764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'someFilterRegistration' to: [/*]
+2020-03-18 15:43:09.499  INFO 10764 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-03-18 15:43:09.501  INFO 10764 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2-console/*]
+2020-03-18 15:43:10.235  INFO 10764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-18 15:43:11.249  INFO 10764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-18 15:43:11.445  INFO 10764 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-03-18 15:43:11.523  INFO 10764 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-03-18 15:43:11.881  INFO 10764 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
+2020-03-18 15:43:11.896  INFO 10764 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-03-18 15:43:12.053  INFO 10764 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-03-18 15:43:12.364  INFO 10764 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-03-18 15:43:13.426  WARN 10764 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.insightlake.edp.db.dashboard.entity.LogicalField$PrimaryKey
+2020-03-18 15:43:13.427  WARN 10764 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.insightlake.edp.db.dashboard.entity.LogicalField$PrimaryKey
+2020-03-18 15:43:16.460  INFO 10764 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@6e057374'
+2020-03-18 15:43:16.465  INFO 10764 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-18 15:43:17.136  INFO 10764 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'clientInboundChannelExecutor'
+2020-03-18 15:43:17.154  INFO 10764 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'clientOutboundChannelExecutor'
+2020-03-18 15:43:17.178  WARN 10764 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static org.springframework.messaging.simp.SimpMessagingTemplate com.insightlake.edp.kafka.sasl.helper.SendResult.broker
+2020-03-18 15:43:17.536  INFO 10764 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [jar:file:/home/sai/EDP-DATA-MODULES/GITREPOSITROYDEPLOYMENT/Kafka-Data-Explorer/libs/thin/root/edp-kafka-sasl-1.0.jar!/data.sql]
+2020-03-18 15:43:17.545  INFO 10764 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [jar:file:/home/sai/EDP-DATA-MODULES/GITREPOSITROYDEPLOYMENT/Kafka-Data-Explorer/libs/thin/root/edp-kafka-sasl-1.0.jar!/data.sql] in 9 ms.
+2020-03-18 15:43:20.276  INFO 10764 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'messageBrokerTaskScheduler'
+2020-03-18 15:43:20.392  INFO 10764 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped URL path [/query] onto handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2020-03-18 15:43:20.392  INFO 10764 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped URL path [/receiver] onto handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2020-03-18 15:43:20.392  INFO 10764 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped URL path [/report] onto handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2020-03-18 15:43:20.422  INFO 10764 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'brokerChannelExecutor'
+2020-03-18 15:43:20.583  INFO 10764 --- [main] .WebSocketAnnotationMethodMessageHandler : Mapped "{[/receiver],messageType=[MESSAGE]}" onto public void com.insightlake.edp.kafka.sasl.controller.ReceiverController.sendMessage(com.insightlake.edp.kafka.sasl.helper.UserEntity) throws java.io.IOException
+2020-03-18 15:43:20.983  INFO 10764 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 2ed8f90d-73d6-4c99-8ed8-efe06bbbbe0a
+
+2020-03-18 15:43:21.163  INFO 10764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/'], []
+2020-03-18 15:43:21.164  INFO 10764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/index.html'], []
+2020-03-18 15:43:21.164  INFO 10764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/api/user/register'], []
+2020-03-18 15:43:21.164  INFO 10764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/api/user/login'], []
+2020-03-18 15:43:21.164  INFO 10764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/api/user/forgot'], []
+2020-03-18 15:43:21.164  INFO 10764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/api/user/reset'], []
+2020-03-18 15:43:21.165  INFO 10764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2020-03-18 15:43:21.165  INFO 10764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/edp/**'], []
+2020-03-18 15:43:21.165  INFO 10764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/app/**'], []
+2020-03-18 15:43:21.172  INFO 10764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/query/**'], []
+2020-03-18 15:43:21.174  INFO 10764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/receiver/**'], []
+2020-03-18 15:43:21.174  INFO 10764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/verify/**'], []
+2020-03-18 15:43:21.175  INFO 10764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/report/**'], []
+2020-03-18 15:43:21.175  INFO 10764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/*.*.*'], []
+2020-03-18 15:43:21.175  INFO 10764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/h2-console/**'], []
+2020-03-18 15:43:21.175  INFO 10764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/assets/**'], []
+2020-03-18 15:43:21.176  INFO 10764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/*.js'], []
+2020-03-18 15:43:21.176  INFO 10764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/*.woff'], []
+2020-03-18 15:43:21.176  INFO 10764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/*.woff2'], []
+2020-03-18 15:43:21.177  INFO 10764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/*.ttf'], []
+2020-03-18 15:43:21.177  INFO 10764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/file/**'], []
+2020-03-18 15:43:21.177  INFO 10764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2020-03-18 15:43:21.177  INFO 10764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2020-03-18 15:43:21.177  INFO 10764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2020-03-18 15:43:21.177  INFO 10764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-03-18 15:43:21.499  INFO 10764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64f248ea, org.springframework.security.web.context.SecurityContextPersistenceFilter@5e1fc897, org.springframework.security.web.header.HeaderWriterFilter@13258770, org.springframework.security.web.authentication.logout.LogoutFilter@3713ebe9, com.insightlake.edp.api.user.security.JWTFilter@6ab36cee, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@a308ffd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@129204bf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5cb7eb6c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1b357db2, org.springframework.security.web.session.SessionManagementFilter@4f5c55a8, org.springframework.security.web.access.ExceptionTranslationFilter@2158d1d1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@49808d41]
+2020-03-18 15:43:22.661  INFO 10764 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-18 15:43:22.934  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1ddf42dd: startup date [Wed Mar 18 15:43:02 IST 2020]; root of context hierarchy
+2020-03-18 15:43:23.006  WARN 10764 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-18 15:43:23.080  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/partition/offset],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<com.insightlake.edp.kafka.sasl.utils.PartationOffset>> com.insightlake.edp.kafka.sasl.controller.ReceiverController.getOffsets(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+2020-03-18 15:43:23.082  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stop],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<java.lang.String>> com.insightlake.edp.kafka.sasl.controller.ReceiverController.stopkafkaConsumer() throws java.lang.Exception
+2020-03-18 15:43:23.082  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stopconsumer],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<java.lang.String>> com.insightlake.edp.kafka.sasl.controller.ReceiverController.stopconsumer() throws java.lang.Exception
+2020-03-18 15:43:23.083  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getMessage],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<java.lang.String>> com.insightlake.edp.kafka.sasl.controller.ReceiverController.getTopics(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+2020-03-18 15:43:23.083  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/partition/message],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<java.lang.String>> com.insightlake.edp.kafka.sasl.controller.ReceiverController.getMessageFromParation(java.lang.String,java.lang.String,long,java.lang.String,java.lang.String) throws java.lang.Exception
+2020-03-18 15:43:23.085  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sender/{topic}/{message}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<java.lang.Object>> com.insightlake.edp.kafka.sasl.controller.SenderController.updateActions(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2020-03-18 15:43:23.086  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/getschema/{schemaName}/{version}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<java.lang.Object>> com.insightlake.edp.kafka.sasl.controller.SchemaController.getLatestSchemaVersion(java.lang.String,java.lang.String)
+2020-03-18 15:43:23.090  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ssal/user],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<com.insightlake.edp.kafka.sasl.helper.SaslUser>> com.insightlake.edp.kafka.sasl.controller.LoginController.updateEntity(com.insightlake.edp.kafka.sasl.helper.SaslUser) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.091  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ssal/user/getuser],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<com.insightlake.edp.kafka.sasl.helper.SaslUser>> com.insightlake.edp.kafka.sasl.controller.LoginController.getUser(com.insightlake.edp.kafka.sasl.helper.SaslUser) throws java.lang.Exception
+2020-03-18 15:43:23.092  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ssal/user],methods=[DELETE],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<java.lang.String>> com.insightlake.edp.kafka.sasl.controller.LoginController.deleteEntity(com.insightlake.edp.kafka.sasl.helper.SaslUser) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.092  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ssal/user],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<com.insightlake.edp.kafka.sasl.helper.SaslUser>> com.insightlake.edp.kafka.sasl.controller.LoginController.saveSaslUser(com.insightlake.edp.kafka.sasl.helper.SaslUser)
+2020-03-18 15:43:23.093  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ssal/user/getAlluser],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<java.util.List<com.insightlake.edp.kafka.sasl.helper.SaslUser>>> com.insightlake.edp.kafka.sasl.controller.LoginController.getSaslUserByUser(long) throws java.lang.Exception
+2020-03-18 15:43:23.094  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/kafka/topics],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.kafka.sasl.utils.ResponseWrapper<java.util.List<com.insightlake.edp.kafka.sasl.utils.Topic>>> com.insightlake.edp.kafka.sasl.controller.ConsumerController.getTopics(java.lang.String,java.lang.String) throws java.lang.Exception
+2020-03-18 15:43:23.098  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/user]}" onto public com.insightlake.edp.db.model.user.User com.insightlake.edp.api.user.controller.UserController.user(java.security.Principal)
+2020-03-18 15:43:23.099  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/update],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.User>> com.insightlake.edp.api.user.controller.UserController.updateUser(com.insightlake.edp.db.model.user.User)
+2020-03-18 15:43:23.099  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/login],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.Map<java.lang.String, java.lang.Object>>> com.insightlake.edp.api.user.controller.UserController.login(com.insightlake.edp.db.model.user.User) throws java.io.IOException
+2020-03-18 15:43:23.100  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/get],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.User>> com.insightlake.edp.api.user.controller.UserController.userByUserName(java.lang.String)
+2020-03-18 15:43:23.100  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/getAll],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.List<com.insightlake.edp.db.model.user.User>>> com.insightlake.edp.api.user.controller.UserController.getAllUsers()
+2020-03-18 15:43:23.101  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/forgot],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.User>> com.insightlake.edp.api.user.controller.UserController.forgetPassword(com.insightlake.edp.db.model.user.User)
+2020-03-18 15:43:23.101  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/reset],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.User>> com.insightlake.edp.api.user.controller.UserController.resetPassword(com.insightlake.edp.db.model.user.User)
+2020-03-18 15:43:23.102  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/delete],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.lang.String>> com.insightlake.edp.api.user.controller.UserController.deleteUser(long)
+2020-03-18 15:43:23.102  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/register],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.User>> com.insightlake.edp.api.user.controller.UserController.createUser(com.insightlake.edp.db.model.user.User)
+2020-03-18 15:43:23.104  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/app],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.App>> com.insightlake.edp.api.user.controller.AppController.updateEntity(com.insightlake.edp.db.model.user.App) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.105  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/app/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.App>> com.insightlake.edp.api.user.controller.AppController.getEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.105  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/app],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.List<com.insightlake.edp.db.model.user.App>>> com.insightlake.edp.api.user.controller.AppController.getAllEntities() throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.106  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/app],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.App>> com.insightlake.edp.api.user.controller.AppController.createEntity(com.insightlake.edp.db.model.user.App) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.106  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/app],methods=[DELETE],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.lang.String>> com.insightlake.edp.api.user.controller.AppController.deleteEntity(com.insightlake.edp.db.model.user.App) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.108  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/org],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.Organization>> com.insightlake.edp.api.user.controller.OrganizationController.updateEntity(com.insightlake.edp.db.model.user.Organization) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.108  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/org/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.Organization>> com.insightlake.edp.api.user.controller.OrganizationController.getEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.109  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/org],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.List<com.insightlake.edp.db.model.user.Organization>>> com.insightlake.edp.api.user.controller.OrganizationController.getAllEntities() throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.109  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/org],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.Organization>> com.insightlake.edp.api.user.controller.OrganizationController.createEntity(com.insightlake.edp.db.model.user.Organization) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.109  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/org],methods=[DELETE],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.lang.String>> com.insightlake.edp.api.user.controller.OrganizationController.deleteEntity(com.insightlake.edp.db.model.user.Organization) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.112  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/groupmembers],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserGroupMember>> com.insightlake.edp.api.user.controller.UserGroupMembersController.updateEntity(com.insightlake.edp.db.model.user.UserGroupMember) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.113  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/groupmembers/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserGroupMember>> com.insightlake.edp.api.user.controller.UserGroupMembersController.getEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.114  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/groupmembers],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.List<com.insightlake.edp.db.model.user.UserGroupMember>>> com.insightlake.edp.api.user.controller.UserGroupMembersController.getAllEntities() throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.115  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/groupmembers],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserGroupMember>> com.insightlake.edp.api.user.controller.UserGroupMembersController.createEntity(com.insightlake.edp.db.model.user.UserGroupMember) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.115  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/groupmembers/getAll/{groupId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.List<com.insightlake.edp.db.model.user.User>>> com.insightlake.edp.api.user.controller.UserGroupMembersController.getAllUsers(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.116  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/groupmembers/{id}],methods=[DELETE],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.lang.String>> com.insightlake.edp.api.user.controller.UserGroupMembersController.deleteEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.117  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/lob],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.Lob>> com.insightlake.edp.api.user.controller.LobController.updateEntity(com.insightlake.edp.db.model.user.Lob) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.118  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/lob/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.Lob>> com.insightlake.edp.api.user.controller.LobController.getEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.119  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/lob],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.List<com.insightlake.edp.db.model.user.Lob>>> com.insightlake.edp.api.user.controller.LobController.getAllEntities() throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.120  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/lob],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.Lob>> com.insightlake.edp.api.user.controller.LobController.createEntity(com.insightlake.edp.db.model.user.Lob) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.121  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/lob],methods=[DELETE],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.lang.String>> com.insightlake.edp.api.user.controller.LobController.deleteEntity(com.insightlake.edp.db.model.user.Lob) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.124  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/menus],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserMenus>> com.insightlake.edp.api.user.controller.UserMenusController.updateEntity(com.insightlake.edp.db.model.user.UserMenus) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.124  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/menus/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserMenus>> com.insightlake.edp.api.user.controller.UserMenusController.getEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.128  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/menus],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.List<com.insightlake.edp.db.model.user.UserMenus>>> com.insightlake.edp.api.user.controller.UserMenusController.getAllEntities() throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.130  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/menus],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserMenus>> com.insightlake.edp.api.user.controller.UserMenusController.createEntity(com.insightlake.edp.db.model.user.UserMenus) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.131  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/menus/{id}],methods=[DELETE],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.lang.String>> com.insightlake.edp.api.user.controller.UserMenusController.deleteEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.132  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/roles],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserRole>> com.insightlake.edp.api.user.controller.RolesController.updateEntity(com.insightlake.edp.db.model.user.UserRole) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.133  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/roles/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserRole>> com.insightlake.edp.api.user.controller.RolesController.getEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.133  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/roles],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.List<com.insightlake.edp.db.model.user.UserRole>>> com.insightlake.edp.api.user.controller.RolesController.getAllEntities() throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.133  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/roles],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserRole>> com.insightlake.edp.api.user.controller.RolesController.createEntity(com.insightlake.edp.db.model.user.UserRole) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.135  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/roles/{id}],methods=[DELETE],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.lang.String>> com.insightlake.edp.api.user.controller.RolesController.deleteEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.138  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/group],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserGroup>> com.insightlake.edp.api.user.controller.UserGroupController.updateEntity(com.insightlake.edp.db.model.user.UserGroup) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.139  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/group/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserGroup>> com.insightlake.edp.api.user.controller.UserGroupController.getEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.140  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/group],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.util.List<com.insightlake.edp.db.model.user.UserGroup>>> com.insightlake.edp.api.user.controller.UserGroupController.getAllEntities() throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.140  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/group],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<com.insightlake.edp.db.model.user.UserGroup>> com.insightlake.edp.api.user.controller.UserGroupController.createEntity(com.insightlake.edp.db.model.user.UserGroup) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.141  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/group/{id}],methods=[DELETE],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.insightlake.edp.common.model.ResponseWrapper<java.lang.String>> com.insightlake.edp.api.user.controller.UserGroupController.deleteEntity(long) throws com.insightlake.edp.common.exception.DbException
+2020-03-18 15:43:23.148  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-18 15:43:23.149  INFO 10764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-18 15:43:23.234  INFO 10764 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-18 15:43:23.234  INFO 10764 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-18 15:43:23.461  INFO 10764 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-03-18 15:43:24.953  INFO 10764 --- [main] o.s.l.c.support.AbstractContextSource    : Property 'userDn' not set - anonymous context will be used for read-write operations
+2020-03-18 15:43:25.341  INFO 10764 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-03-18 15:43:25.344  INFO 10764 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-03-18 15:43:25.352  INFO 10764 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-03-18 15:43:25.363  INFO 10764 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483547
+2020-03-18 15:43:25.363  INFO 10764 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-03-18 15:43:25.364  INFO 10764 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2020-03-18 15:43:25.365  INFO 10764 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2020-03-18 15:43:25.365  INFO 10764 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2020-03-18 15:43:25.446  INFO 10764 --- [main] org.mortbay.log                          : Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog
+2020-03-18 15:43:25.557  INFO 10764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9494 (http) with context path '/insightlake'
+2020-03-18 15:43:25.562  INFO 10764 --- [main] c.i.edp.kafka.sasl.EdpKafkaApp           : Started EdpKafkaApp in 26.3 seconds (JVM running for 74.381)
+2020-03-18 15:43:27.694  INFO 10764 --- [http-nio-9494-exec-1] o.a.c.c.C.[.[localhost].[/insightlake]   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-03-18 15:43:27.695  INFO 10764 --- [http-nio-9494-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-03-18 15:43:27.774  INFO 10764 --- [http-nio-9494-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 78 ms
+2020-03-18 15:43:28.044  INFO 10764 --- [http-nio-9494-exec-4] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-03-18 15:44:20.419  INFO 10764 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2020-03-18 15:44:38.381  INFO 10764 --- [http-nio-9494-exec-6] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.offset.reset = earliest
+	bootstrap.servers = [pkc-43n10.us-central1.gcp.confluent.cloud:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = false
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = P4OW3VG72EPGYBF3-consumer9
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_SSL
+	send.buffer.bytes = 131072
+	session.timeout.ms = 30000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2020-03-18 15:44:39.194  INFO 10764 --- [http-nio-9494-exec-6] o.a.k.c.s.authenticator.AbstractLogin    : Successfully logged in.
+2020-03-18 15:44:39.442  WARN 10764 --- [http-nio-9494-exec-6] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'key.serializer' was supplied but isn't a known config.
+2020-03-18 15:44:39.442  WARN 10764 --- [http-nio-9494-exec-6] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'value.serializer' was supplied but isn't a known config.
+2020-03-18 15:44:39.447  INFO 10764 --- [http-nio-9494-exec-6] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.3.0
+2020-03-18 15:44:39.447  INFO 10764 --- [http-nio-9494-exec-6] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: fc1aaa116b661c8a
+2020-03-18 15:44:39.447  INFO 10764 --- [http-nio-9494-exec-6] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1584526479442
+2020-03-18 15:44:44.358  INFO 10764 --- [http-nio-9494-exec-6] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-1, groupId=P4OW3VG72EPGYBF3-consumer9] Cluster ID: lkc-yo29p
+2020-03-18 15:44:58.045  INFO 10764 --- [clientInboundChannel-7] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.offset.reset = earliest
+	bootstrap.servers = [pkc-43n10.us-central1.gcp.confluent.cloud:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = false
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = P4OW3VG72EPGYBF3-consumer22
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_SSL
+	send.buffer.bytes = 131072
+	session.timeout.ms = 30000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2020-03-18 15:44:58.047  INFO 10764 --- [clientInboundChannel-7] o.a.k.c.s.authenticator.AbstractLogin    : Successfully logged in.
+2020-03-18 15:44:58.055  WARN 10764 --- [clientInboundChannel-7] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'key.serializer' was supplied but isn't a known config.
+2020-03-18 15:44:58.055  WARN 10764 --- [clientInboundChannel-7] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'value.serializer' was supplied but isn't a known config.
+2020-03-18 15:44:58.058  INFO 10764 --- [clientInboundChannel-7] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.3.0
+2020-03-18 15:44:58.058  INFO 10764 --- [clientInboundChannel-7] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: fc1aaa116b661c8a
+2020-03-18 15:44:58.058  INFO 10764 --- [clientInboundChannel-7] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1584526498055
+2020-03-18 15:44:58.065  INFO 10764 --- [clientInboundChannel-7] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-2, groupId=P4OW3VG72EPGYBF3-consumer22] Subscribed to topic(s): test
+2020-03-18 15:44:58.068  INFO 10764 --- [clientInboundChannel-7] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2020-03-18 15:45:02.691  INFO 10764 --- [-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-2, groupId=P4OW3VG72EPGYBF3-consumer22] Cluster ID: lkc-yo29p
+2020-03-18 15:45:02.693  INFO 10764 --- [-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-2, groupId=P4OW3VG72EPGYBF3-consumer22] Discovered group coordinator b7-pkc-43n10.us-central1.gcp.confluent.cloud:9092 (id: 2147483640 rack: null)
+2020-03-18 15:45:03.166  INFO 10764 --- [-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-2, groupId=P4OW3VG72EPGYBF3-consumer22] Revoking previously assigned partitions []
+2020-03-18 15:45:03.168  INFO 10764 --- [-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2020-03-18 15:45:03.170  INFO 10764 --- [-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-2, groupId=P4OW3VG72EPGYBF3-consumer22] (Re-)joining group
+2020-03-18 15:45:05.749  INFO 10764 --- [http-nio-9494-exec-3] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.offset.reset = earliest
+	bootstrap.servers = [pkc-43n10.us-central1.gcp.confluent.cloud:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = false
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = P4OW3VG72EPGYBF3-consumer27
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_SSL
+	send.buffer.bytes = 131072
+	session.timeout.ms = 30000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2020-03-18 15:45:05.760  WARN 10764 --- [http-nio-9494-exec-3] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'key.serializer' was supplied but isn't a known config.
+2020-03-18 15:45:05.760  WARN 10764 --- [http-nio-9494-exec-3] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'value.serializer' was supplied but isn't a known config.
+2020-03-18 15:45:05.760  INFO 10764 --- [http-nio-9494-exec-3] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.3.0
+2020-03-18 15:45:05.760  INFO 10764 --- [http-nio-9494-exec-3] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: fc1aaa116b661c8a
+2020-03-18 15:45:05.760  INFO 10764 --- [http-nio-9494-exec-3] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1584526505760
+2020-03-18 15:45:05.768  INFO 10764 --- [http-nio-9494-exec-3] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-3, groupId=P4OW3VG72EPGYBF3-consumer27] Subscribed to topic(s): test
+2020-03-18 15:45:07.148  INFO 10764 --- [-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-2, groupId=P4OW3VG72EPGYBF3-consumer22] (Re-)joining group
+2020-03-18 15:45:08.347  INFO 10764 --- [-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-2, groupId=P4OW3VG72EPGYBF3-consumer22] Successfully joined group with generation 1
+2020-03-18 15:45:08.364  INFO 10764 --- [-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-2, groupId=P4OW3VG72EPGYBF3-consumer22] Setting newly assigned partitions: test-1, test-0, test-3, test-2, test-5, test-4
+2020-03-18 15:45:08.365  INFO 10764 --- [-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [test-1, test-0, test-3, test-2, test-5, test-4]
+2020-03-18 15:45:08.911  INFO 10764 --- [-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-2, groupId=P4OW3VG72EPGYBF3-consumer22] Setting offset for partition test-5 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=b16-pkc-43n10.us-central1.gcp.confluent.cloud:9092 (id: 16 rack: 1), epoch=0}}
+2020-03-18 15:45:08.914  INFO 10764 --- [-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-2, groupId=P4OW3VG72EPGYBF3-consumer22] Setting offset for partition test-4 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=b14-pkc-43n10.us-central1.gcp.confluent.cloud:9092 (id: 14 rack: 2), epoch=0}}
+2020-03-18 15:45:08.915  INFO 10764 --- [-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-2, groupId=P4OW3VG72EPGYBF3-consumer22] Setting offset for partition test-1 to the committed offset FetchPosition{offset=3, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=b11-pkc-43n10.us-central1.gcp.confluent.cloud:9092 (id: 11 rack: 2), epoch=0}}
+2020-03-18 15:45:08.915  INFO 10764 --- [-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-2, groupId=P4OW3VG72EPGYBF3-consumer22] Setting offset for partition test-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=b12-pkc-43n10.us-central1.gcp.confluent.cloud:9092 (id: 12 rack: 0), epoch=0}}
+2020-03-18 15:45:08.916  INFO 10764 --- [-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-2, groupId=P4OW3VG72EPGYBF3-consumer22] Setting offset for partition test-3 to the committed offset FetchPosition{offset=3, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=b15-pkc-43n10.us-central1.gcp.confluent.cloud:9092 (id: 15 rack: 0), epoch=0}}
+2020-03-18 15:45:08.917  INFO 10764 --- [-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-2, groupId=P4OW3VG72EPGYBF3-consumer22] Setting offset for partition test-2 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=b17-pkc-43n10.us-central1.gcp.confluent.cloud:9092 (id: 17 rack: 2), epoch=0}}
+2020-03-18 15:45:09.484  INFO 10764 --- [http-nio-9494-exec-3] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-3, groupId=P4OW3VG72EPGYBF3-consumer27] Cluster ID: lkc-yo29p
+2020-03-18 15:45:09.484  INFO 10764 --- [http-nio-9494-exec-3] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-3, groupId=P4OW3VG72EPGYBF3-consumer27] Discovered group coordinator b11-pkc-43n10.us-central1.gcp.confluent.cloud:9092 (id: 2147483636 rack: null)
+2020-03-18 15:45:09.669  INFO 10764 --- [http-nio-9494-exec-3] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-3, groupId=P4OW3VG72EPGYBF3-consumer27] Revoking previously assigned partitions []
+2020-03-18 15:45:09.670  INFO 10764 --- [http-nio-9494-exec-3] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-3, groupId=P4OW3VG72EPGYBF3-consumer27] (Re-)joining group
+2020-03-18 15:45:13.963  INFO 10764 --- [http-nio-9494-exec-3] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-3, groupId=P4OW3VG72EPGYBF3-consumer27] (Re-)joining group
+2020-03-18 15:45:14.835  INFO 10764 --- [http-nio-9494-exec-3] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-3, groupId=P4OW3VG72EPGYBF3-consumer27] Successfully joined group with generation 1
+2020-03-18 15:45:14.836  INFO 10764 --- [http-nio-9494-exec-3] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-3, groupId=P4OW3VG72EPGYBF3-consumer27] Setting newly assigned partitions: test-1, test-0, test-3, test-2, test-5, test-4
+2020-03-18 15:45:15.238  INFO 10764 --- [http-nio-9494-exec-3] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-3, groupId=P4OW3VG72EPGYBF3-consumer27] Found no committed offset for partition test-1
+2020-03-18 15:45:15.238  INFO 10764 --- [http-nio-9494-exec-3] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-3, groupId=P4OW3VG72EPGYBF3-consumer27] Found no committed offset for partition test-0
+2020-03-18 15:45:15.239  INFO 10764 --- [http-nio-9494-exec-3] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-3, groupId=P4OW3VG72EPGYBF3-consumer27] Found no committed offset for partition test-3
+2020-03-18 15:45:15.240  INFO 10764 --- [http-nio-9494-exec-3] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-3, groupId=P4OW3VG72EPGYBF3-consumer27] Found no committed offset for partition test-2
+2020-03-18 15:45:15.241  INFO 10764 --- [http-nio-9494-exec-3] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-3, groupId=P4OW3VG72EPGYBF3-consumer27] Found no committed offset for partition test-5
+2020-03-18 15:45:15.241  INFO 10764 --- [http-nio-9494-exec-3] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-3, groupId=P4OW3VG72EPGYBF3-consumer27] Found no committed offset for partition test-4
+2020-03-18 15:45:19.327  INFO 10764 --- [kafka-coordinator-heartbeat-thread | P4OW3VG72EPGYBF3-consumer27] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-3, groupId=P4OW3VG72EPGYBF3-consumer27] Resetting offset for partition test-0 to offset 0.
+2020-03-18 15:45:19.329  INFO 10764 --- [http-nio-9494-exec-3] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-3, groupId=P4OW3VG72EPGYBF3-consumer27] Resetting offset for partition test-5 to offset 0.
+2020-03-18 15:45:19.329  INFO 10764 --- [kafka-coordinator-heartbeat-thread | P4OW3VG72EPGYBF3-consumer27] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-3, groupId=P4OW3VG72EPGYBF3-consumer27] Resetting offset for partition test-3 to offset 0.
+2020-03-18 15:45:19.330  INFO 10764 --- [http-nio-9494-exec-3] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-3, groupId=P4OW3VG72EPGYBF3-consumer27] Resetting offset for partition test-2 to offset 0.
+2020-03-18 15:45:19.407  INFO 10764 --- [http-nio-9494-exec-3] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-3, groupId=P4OW3VG72EPGYBF3-consumer27] Resetting offset for partition test-1 to offset 0.
+2020-03-18 15:45:19.617  INFO 10764 --- [http-nio-9494-exec-3] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-3, groupId=P4OW3VG72EPGYBF3-consumer27] Resetting offset for partition test-4 to offset 0.
+2020-03-18 15:45:26.162  INFO 10764 --- [http-nio-9494-exec-3] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-3, groupId=P4OW3VG72EPGYBF3-consumer27] Member consumer-3-6d2d7623-efbd-48a5-a89b-7ed7d58c3658 sending LeaveGroup request to coordinator b11-pkc-43n10.us-central1.gcp.confluent.cloud:9092 (id: 2147483636 rack: null)
+2020-03-18 15:45:57.837  INFO 10764 --- [clientInboundChannel-1] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.offset.reset = earliest
+	bootstrap.servers = [pkc-43n10.us-central1.gcp.confluent.cloud:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = false
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = P4OW3VG72EPGYBF3-consumer2
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_SSL
+	send.buffer.bytes = 131072
+	session.timeout.ms = 30000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2020-03-18 15:45:57.874  WARN 10764 --- [clientInboundChannel-1] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'key.serializer' was supplied but isn't a known config.
+2020-03-18 15:45:57.874  WARN 10764 --- [clientInboundChannel-1] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'value.serializer' was supplied but isn't a known config.
+2020-03-18 15:45:57.874  INFO 10764 --- [clientInboundChannel-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.3.0
+2020-03-18 15:45:57.874  INFO 10764 --- [clientInboundChannel-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: fc1aaa116b661c8a
+2020-03-18 15:45:57.875  INFO 10764 --- [clientInboundChannel-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1584526557874
+2020-03-18 15:45:57.875  INFO 10764 --- [clientInboundChannel-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-4, groupId=P4OW3VG72EPGYBF3-consumer2] Subscribed to topic(s): edpinventory
+2020-03-18 15:45:57.875  INFO 10764 --- [clientInboundChannel-1] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2020-03-18 15:45:57.898  INFO 10764 --- [-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-4, groupId=P4OW3VG72EPGYBF3-consumer2] Unsubscribed all topics or patterns and assigned partitions
+2020-03-18 15:45:57.898  INFO 10764 --- [-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-03-18 15:45:57.901  INFO 10764 --- [-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
