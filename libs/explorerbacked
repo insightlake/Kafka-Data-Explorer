@@ -12,5 +12,6 @@ WORKDIR /usr
 ADD thin /usr/thin
 ADD h2.properties /usr/h2.properties
 
+
 # Run the jar file -jar 
 ENTRYPOINT ["java","-Dthin.root=/usr/thin/root/","-jar","/usr/thin/root/edp-kafka-sasl-1.0.jar","--spring.config.location=/usr/h2.properties"]
