@@ -23,7 +23,7 @@ Installation
 * Download or clone the repository. 
 * Run bin/insightlake command.
 * Open browser with URL as http://localhost:8080/
-* Change configuration in /conf folder to set different ports
+* Add sasl user with username client and password client-secret
 * By default H2 database is used, you can change the database details in jdbc.properties file
 
 Installation using docker 
@@ -32,6 +32,8 @@ Installation using docker
 * Change kafka configuration in /lib h2.properties file
 * cd docker
 * docker-compose -f docker-compose.yaml up 
+
+
 
 
 License
