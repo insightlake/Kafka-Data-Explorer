@@ -8,8 +8,6 @@ InsightLake Kafka Data Explorer solution is part of InsightLake Data Platform. I
 
 Users can explore the realtime data securely. All the data access is logged.
 
-To learn more, check out [http://insightlake.com/dataexplorer.html](http://insightlake.com/dataexplorer.html)
-
 <img style="width:100%;" src="images/login.png">
 
 <img style="width:100%;" src="images/explore.png">
@@ -17,6 +15,8 @@ To learn more, check out [http://insightlake.com/dataexplorer.html](http://insig
 <img style="width:100%;" src="images/schema.png">
 
 <img style="width:100%;" src="images/realtime-graph.png">
+
+To learn more, check out [http://www.insightlake.com/kafka-explorer.html](http://www.insightlake.com/kafka-explorer.html) 
 
 Installation
 ------
